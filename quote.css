@@ -1,0 +1,54 @@
+.new {
+  cursor: pointer;
+}
+
+a, a:active, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.blockquote, .blockquote-footer {
+  border-left: none;
+  padding: 0px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 28px;
+}
+
+.blockquote-footer {
+  font-size: 80%
+}
+
+i {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+.fa {
+  color: white;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  border: 2px solid white;
+  box-shadow: none;
+}
+
+.btn:visited {
+  box-shadow: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%
+}
