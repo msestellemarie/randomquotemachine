@@ -10,7 +10,7 @@ function getGradient(){
 }
 
 function getQuote(){
-  $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(quote){
+  $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(quote){
     $(".quote").html("<i class='fa fa-quote-left' aria-hidden='true'></i>" + quote[0].content.replace(/\n|<\/*p>/g,"").trim() + "<i class='fa fa-quote-right' aria-hidden='true'></i>");
     $(".title").html(quote[0].title);
     $(".tweet").html("<a target='_blank' href='https://twitter.com/intent/tweet?&text=" + $(".quote").text() + " -" + $(".title").text() + "'><i class='fa fa-twitter fa-2x' aria-hidden='true'></i></a>")
